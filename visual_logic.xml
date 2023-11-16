@@ -1,0 +1,2410 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="Logic" type="CommonTab" active="false" scrollx="4.9218377960680755" scrolly="-137.38923023952418" scale="0.6768393620286867">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="5+w98]V2W$R1z?S#9}h@">anim2</variable>
+      <variable id="|.e%fP883-3Q?mtnU?AU">anim</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="*2A/!CHvMOw^u#%y2?Dx" x="190" y="70">
+      <field name="VAR" id="5+w98]V2W$R1z?S#9}h@">anim2</field>
+      <value name="VALUE">
+        <block type="math_number" id="},G=@i,+GUQ93oBrpiv2">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <next>
+        <block type="whenClicked" id="E2Dj#ND#5].0.DY`b=hZ" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="L.,`h=ab?kx1@{;1OIC(">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="groupList" id="v!^}{a9oh7@D6E!V`Ua;">
+              <field name="FIELDNAME">Kn0</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="iQ9Tt3o[z(FF~Q+D.MGV">
+              <field name="VAR" id="|.e%fP883-3Q?mtnU?AU">anim</field>
+              <value name="VALUE">
+                <block type="math_number" id="bwt3X{Bz%kc2Bq`Jt{C(">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+              <next>
+                <block type="pauseAnimation" id="jRc;w0s?IG628LiT|;^5">
+                  <value name="VALUE">
+                    <shadow type="animationList" id="j+-)1Cey^s5iJCtlErr)">
+                      <field name="FIELDNAME">Steel_Cyl</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="pauseAnimation" id="n4=CqlEj%aO!!qiVFDLo">
+                      <value name="VALUE">
+                        <shadow type="animationList" id="PF8VKK;I@=;7d}PN(T?U">
+                          <field name="FIELDNAME">Cylinder.001</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="playAnimationAdv" id=":!I)zxS`w|`Ioexb@zCe">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                          <field name="REVERSED">FALSE</field>
+                          <field name="LOOP">LoopOnce</field>
+                          <value name="VALUE">
+                            <shadow type="animationList" id="=FW3Do]Ha#q7b5X@hl.T">
+                              <field name="FIELDNAME">Kn0</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setObjTransform" id="sm3dw)s|NJ!S_{)HG;b!">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                              <field name="MODE">position</field>
+                              <field name="OFFSET">FALSE</field>
+                              <value name="TARGETOBJ">
+                                <shadow type="objectList" id="k[Q,}Oo0|Y6Zzie;P6jF">
+                                  <field name="FIELDNAME">Kn1</field>
+                                </shadow>
+                              </value>
+                              <value name="Z">
+                                <block type="math_number" id="?{FpO?`)J;:A]=XjhdAq">
+                                  <field name="NUM">0.096733</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setObjTransform" id="BYYxpF-+?h,Tpq`-BJ3c">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                  <field name="MODE">position</field>
+                                  <field name="OFFSET">FALSE</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="?XAgD#,NhL8pa=3at{Z:">
+                                      <field name="FIELDNAME">Kn2</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Z">
+                                    <block type="math_number" id="_ZNj97/(Q]yRGWV/r_H|">
+                                      <field name="NUM">0.096733</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="synthSound" id=";21@3;8$E8)F+CYOeO)E">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="PROGRAM"></mutation>
+                                      <field name="TYPE">PROGRAM</field>
+                                      <field name="CHANNEL">0</field>
+                                      <field name="PROGRAM">117</field>
+                                      <next>
+                                        <block type="synthSound" id=":C+xc^KlNy?I/S,2uqU|">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="NOTE_ON"></mutation>
+                                          <field name="TYPE">NOTE_ON</field>
+                                          <field name="CHANNEL">0</field>
+                                          <field name="PROGRAM">0</field>
+                                          <value name="NOTE">
+                                            <shadow type="getNoteNumber" id="j6RuT:,`HoTB`}XbF_a8">
+                                              <field name="NOTE">0</field>
+                                              <field name="OCTAVE">2</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VELOCITY">
+                                            <shadow type="math_number" id="[GQr3G|u]/gy[SU0MT%z">
+                                              <field name="NUM">30</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="TIME">
+                                            <shadow type="math_number" id="l_z[s#_?KT~a-x_YrRY@">
+                                              <field name="NUM">0</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id=",f!O[/3H(FG:pxrc6%lt" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="#|g#|M/n-p7UiDprV#X}">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="groupList" id="FvVlw~u?Q`kmck)x|`qr">
+                  <field name="FIELDNAME">Kn1</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="variables_set" id="{eEP{EJ8[irjGF9EB6RV">
+                  <field name="VAR" id="|.e%fP883-3Q?mtnU?AU">anim</field>
+                  <value name="VALUE">
+                    <block type="math_number" id="82@qEk#}2L|iynjuEu_7">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setAnimationSpeed" id="IQ?y_@v=ueK*]yB3GH+2">
+                      <field name="REVERSED">FALSE</field>
+                      <value name="VALUE">
+                        <shadow type="animationList" id="*ooG5@+A?$*s5G)%z6yk">
+                          <field name="FIELDNAME">Steel_Cyl</field>
+                        </shadow>
+                      </value>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="jUI29d7c]pqo~%4rH%br">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="controls_ifelse" id="v|%fqO|VSIjkf6m_I!.f">
+                          <value name="IF0">
+                            <block type="logic_compare" id="kb!h~ideKc(c01:GfQho">
+                              <field name="OP">EQ</field>
+                              <value name="A">
+                                <block type="math_number" id="BbLB4A7cxNc.R[e`#vCB">
+                                  <field name="NUM">0</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <block type="getAnimationFrame" id="w_$ZZfFM+7i/JQR)Tk;Y">
+                                  <value name="VALUE">
+                                    <shadow type="animationList" id="!/F2IWJ=4q`u;,yQ|rJ.">
+                                      <field name="FIELDNAME">Steel_Cyl</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="playAnimationAdv" id="MDSQ5D`S?P.D^FT-tYg#">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                              <field name="REVERSED">FALSE</field>
+                              <field name="LOOP">AUTO</field>
+                              <value name="VALUE">
+                                <shadow type="animationList" id="$6CG?7?Mm8_bi@$xx,JZ">
+                                  <field name="FIELDNAME">Steel_Cyl</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                          <statement name="ELSE">
+                            <block type="resumeAnimation" id="])xYxo1a}G$)=0wDc`}(">
+                              <value name="VALUE">
+                                <shadow type="animationList" id="g#jgY_g]yOZe~O/fX*NP">
+                                  <field name="FIELDNAME">Steel_Cyl</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="setObjTransform" id="3:U)Yf6akkMN%S1)Z7Jm">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                              <field name="MODE">position</field>
+                              <field name="OFFSET">FALSE</field>
+                              <value name="TARGETOBJ">
+                                <shadow type="objectList" id="^T0{$THNB`y9a~ETj[2c">
+                                  <field name="FIELDNAME">Kn1</field>
+                                </shadow>
+                              </value>
+                              <value name="Z">
+                                <block type="math_number" id="P`dU/n!^4%.SrwB*-UMw">
+                                  <field name="NUM">0.086733</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setObjTransform" id="^Ky;2Q-?kEVl945JTMcS">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                  <field name="MODE">position</field>
+                                  <field name="OFFSET">FALSE</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="ycQy0#HuWA=_J`fZevIl">
+                                      <field name="FIELDNAME">Kn2</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Z">
+                                    <block type="math_number" id="A|Y%+*PIt~e[_{]M$;$V">
+                                      <field name="NUM">0.096733</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="controls_if" id="Y7KGmv;k@G,))uxZ1RFC">
+                                      <value name="IF0">
+                                        <block type="variables_get" id="$ZPWhTi?I=slqMm*J)!.">
+                                          <field name="VAR" id="5+w98]V2W$R1z?S#9}h@">anim2</field>
+                                        </block>
+                                      </value>
+                                      <statement name="DO0">
+                                        <block type="resumeAnimation" id="cL-o?DE_azSC`O9sN3vB">
+                                          <value name="VALUE">
+                                            <shadow type="animationList" id="-jlExL?+LE$pB[czzhBv">
+                                              <field name="FIELDNAME">Cylinder.001</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                      <next>
+                                        <block type="synthSound" id="k.Nq%Kl2p)]pStP5L5)P">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="PROGRAM"></mutation>
+                                          <field name="TYPE">PROGRAM</field>
+                                          <field name="CHANNEL">0</field>
+                                          <field name="PROGRAM">117</field>
+                                          <next>
+                                            <block type="synthSound" id="3X4O`)lkxOH5@~S.~D`o">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="NOTE_ON"></mutation>
+                                              <field name="TYPE">NOTE_ON</field>
+                                              <field name="CHANNEL">0</field>
+                                              <field name="PROGRAM">0</field>
+                                              <value name="NOTE">
+                                                <shadow type="getNoteNumber" id="4As_O8/~Q:ViTiz-9*96">
+                                                  <field name="NOTE">0</field>
+                                                  <field name="OCTAVE">3</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VELOCITY">
+                                                <shadow type="math_number" id="dIVM]mXLOLm]M1UK_B|W">
+                                                  <field name="NUM">30</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="TIME">
+                                                <shadow type="math_number" id="O$C.$:yU)WpNIX@#lt8%">
+                                                  <field name="NUM">0</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="whenClicked" id="OarLcXT37Hj#cJUFgQ~@" inline="false">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="Y.B8TQUZ@@JKpG^`wLHT">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="groupList" id="E5A.Bjii*ucfPRt0tMK[">
+                      <field name="FIELDNAME">Kn2</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="~Smr3YuSIPkH|96HfJfi">
+                      <field name="VAR" id="|.e%fP883-3Q?mtnU?AU">anim</field>
+                      <value name="VALUE">
+                        <block type="math_number" id="QjQj)%o,1eX|H*;kCShn">
+                          <field name="NUM">1</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setAnimationSpeed" id="%pI2[{q{bGI`A)@aV6kE">
+                          <field name="REVERSED">FALSE</field>
+                          <value name="VALUE">
+                            <shadow type="animationList" id="bYT.Yrf#$IODlO-.X7)n">
+                              <field name="FIELDNAME">Steel_Cyl</field>
+                            </shadow>
+                          </value>
+                          <value name="SPEED">
+                            <shadow type="math_number" id="bqsT:6l`}Pn;1bmm2Ym%">
+                              <field name="NUM">2</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="controls_ifelse" id="_3kqpq7[|Bp1sc|tB68b">
+                              <value name="IF0">
+                                <block type="logic_compare" id="GTth|K(sRBTl,2qcmYoG">
+                                  <field name="OP">EQ</field>
+                                  <value name="A">
+                                    <block type="math_number" id="2r3NwM:?ejl*5/OCXI7Y">
+                                      <field name="NUM">0</field>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <block type="getAnimationFrame" id="X@4ms#M_rF/BN$/(X;B~">
+                                      <value name="VALUE">
+                                        <shadow type="animationList" id="XZ@nOOf(G^TvJ@4~RHOa">
+                                          <field name="FIELDNAME">Steel_Cyl</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <statement name="DO0">
+                                <block type="playAnimationAdv" id="Dx(jkC=PA}/BU.MeP~lM">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                                  <field name="REVERSED">FALSE</field>
+                                  <field name="LOOP">AUTO</field>
+                                  <value name="VALUE">
+                                    <shadow type="animationList" id="wDUVi15D%`e~Ez|}gq|o">
+                                      <field name="FIELDNAME">Steel_Cyl</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </statement>
+                              <statement name="ELSE">
+                                <block type="resumeAnimation" id="ZjI*,i~JdwkWMIc6v8zr">
+                                  <value name="VALUE">
+                                    <shadow type="animationList" id="(w;CVEk13d{@%zr;8j{u">
+                                      <field name="FIELDNAME">Steel_Cyl</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </statement>
+                              <next>
+                                <block type="setObjTransform" id="#`*U}+KI0g1.e:6V^8|e">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                  <field name="MODE">position</field>
+                                  <field name="OFFSET">FALSE</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="UXYTqltx`uj)9ZzHA!dn">
+                                      <field name="FIELDNAME">Kn2</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Z">
+                                    <block type="math_number" id="7-6Ga4}X]Ey/o1[{LfjE">
+                                      <field name="NUM">0.086733</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="setObjTransform" id=",Nn[|p:mrX=fO++mI{o/">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                      <field name="MODE">position</field>
+                                      <field name="OFFSET">FALSE</field>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList" id="W750[hktCSA=!yqV`lXa">
+                                          <field name="FIELDNAME">Kn1</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Z">
+                                        <block type="math_number" id="R=c58D:h$MxpX!wEq|wV">
+                                          <field name="NUM">0.096733</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="controls_if" id="|wI-%c_}3$0azSu7LSv_">
+                                          <value name="IF0">
+                                            <block type="variables_get" id="EmQ!D4u[7Wx|nt^CL;Op">
+                                              <field name="VAR" id="5+w98]V2W$R1z?S#9}h@">anim2</field>
+                                            </block>
+                                          </value>
+                                          <statement name="DO0">
+                                            <block type="resumeAnimation" id="kPcv:`md0*~iZjr%%ee:">
+                                              <value name="VALUE">
+                                                <shadow type="animationList" id="Xseiisu4-oKQPGX916B^">
+                                                  <field name="FIELDNAME">Cylinder.001</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </statement>
+                                          <next>
+                                            <block type="synthSound" id="uz*6ZiP$IMD0VG]4.9M7">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="PROGRAM"></mutation>
+                                              <field name="TYPE">PROGRAM</field>
+                                              <field name="CHANNEL">0</field>
+                                              <field name="PROGRAM">117</field>
+                                              <next>
+                                                <block type="synthSound" id="k,}O0k+BwjAzxzCthU8k">
+                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="NOTE_ON"></mutation>
+                                                  <field name="TYPE">NOTE_ON</field>
+                                                  <field name="CHANNEL">0</field>
+                                                  <field name="PROGRAM">0</field>
+                                                  <value name="NOTE">
+                                                    <shadow type="getNoteNumber" id="-]+upP4QRn_ha~#zta6o">
+                                                      <field name="NOTE">0</field>
+                                                      <field name="OCTAVE">4</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VELOCITY">
+                                                    <shadow type="math_number" id="1]=mcBmt[W3s`q(|Xqlu">
+                                                      <field name="NUM">30</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="TIME">
+                                                    <shadow type="math_number" id="RBoZ0q/Tk0+FwRU~40Lz">
+                                                      <field name="NUM">0</field>
+                                                    </shadow>
+                                                  </value>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenClicked" id="HZoSPj69SIXpg}tk0a+]" inline="false">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <field name="DOUBLE_CLICK">FALSE</field>
+                      <field name="LEFT_BUTTON">TRUE</field>
+                      <field name="MIDDLE_BUTTON">TRUE</field>
+                      <field name="RIGHT_BUTTON">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="y*D.XyR!*i6AkP~Pg8Qx">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="groupList" id="[*BwTwKr,;UK!;M*RLQt">
+                          <field name="FIELDNAME">KnR</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="synthSound" id="}RK?fxYvU|IRX:K|QhuS">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="PROGRAM"></mutation>
+                          <field name="TYPE">PROGRAM</field>
+                          <field name="CHANNEL">0</field>
+                          <field name="PROGRAM">117</field>
+                          <next>
+                            <block type="controls_ifelse" id="Vo~-*{?;f`-i/(A9m8b/">
+                              <value name="IF0">
+                                <block type="variables_get" id="kj8oJ4U@fl.i*!#Ea^zz">
+                                  <field name="VAR" id="5+w98]V2W$R1z?S#9}h@">anim2</field>
+                                </block>
+                              </value>
+                              <statement name="DO0">
+                                <block type="variables_set" id="|ga-WN*/TM5Qt[nQA6J]">
+                                  <field name="VAR" id="5+w98]V2W$R1z?S#9}h@">anim2</field>
+                                  <value name="VALUE">
+                                    <block type="math_number" id="8oNMW%9|:b^/YISdj[9t">
+                                      <field name="NUM">0</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="setObjTransform" id="Z9AO^`9R_ON;;,6(?3%f">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                      <field name="MODE">position</field>
+                                      <field name="OFFSET">FALSE</field>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList" id="n=6ABKVHu=y_ZX`37-#D">
+                                          <field name="FIELDNAME">KnPov</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Z">
+                                        <block type="math_number" id="rcHTf|loc@/`Z`dFU](m">
+                                          <field name="NUM">0.096733</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="synthSound" id="hvY/`MYL=!E;~6qY!Ob]">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="NOTE_ON"></mutation>
+                                          <field name="TYPE">NOTE_ON</field>
+                                          <field name="CHANNEL">0</field>
+                                          <field name="PROGRAM">0</field>
+                                          <value name="NOTE">
+                                            <shadow type="getNoteNumber" id="oz_2y~%)aGtoVszjm193">
+                                              <field name="NOTE">0</field>
+                                              <field name="OCTAVE">0</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VELOCITY">
+                                            <shadow type="math_number" id="EYbf*re6Fd)$QC):HGKo">
+                                              <field name="NUM">30</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="TIME">
+                                            <shadow type="math_number" id="u6gK2r-c|@N@X][rqXJx">
+                                              <field name="NUM">0</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                              <statement name="ELSE">
+                                <block type="variables_set" id="PW[Sw5};s#%AI|N,~c`T">
+                                  <field name="VAR" id="5+w98]V2W$R1z?S#9}h@">anim2</field>
+                                  <value name="VALUE">
+                                    <block type="math_number" id="m.%b5u}vi(=[TdhV3R1T">
+                                      <field name="NUM">1</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="setObjTransform" id="(~sa}-Y!XWknlF5U)WGv">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                      <field name="MODE">position</field>
+                                      <field name="OFFSET">FALSE</field>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList" id="xfv7yRfZlo(s+lfoZBVx">
+                                          <field name="FIELDNAME">KnPov</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Z">
+                                        <block type="math_number" id="lwu4|k;pn6jd{Z{LAW+v">
+                                          <field name="NUM">0.086733</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="synthSound" id="IEA`*mmP`9)~+B{qQvL}">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" synth_command_type="NOTE_ON"></mutation>
+                                          <field name="TYPE">NOTE_ON</field>
+                                          <field name="CHANNEL">0</field>
+                                          <field name="PROGRAM">0</field>
+                                          <value name="NOTE">
+                                            <shadow type="getNoteNumber" id="](I]S4V~eXr+]_y8Zr(]">
+                                              <field name="NOTE">0</field>
+                                              <field name="OCTAVE">1</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VELOCITY">
+                                            <shadow type="math_number" id="|A[Sw2Dfak8%ixFz{.9P">
+                                              <field name="NUM">30</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="TIME">
+                                            <shadow type="math_number" id="UfwrgdpP_p,c:S{3,n%G">
+                                              <field name="NUM">0</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                              <next>
+                                <block type="controls_if" id="XoNBtlm-Lr*z8{REK:=r">
+                                  <mutation else="1"></mutation>
+                                  <value name="IF0">
+                                    <block type="logic_operation" id=":[]T4rlruB=9GaFs5dc7">
+                                      <field name="OP">AND</field>
+                                      <value name="A">
+                                        <block type="variables_get" id="(Z7}=2r5]MWpdU^Gd$p~">
+                                          <field name="VAR" id="|.e%fP883-3Q?mtnU?AU">anim</field>
+                                        </block>
+                                      </value>
+                                      <value name="B">
+                                        <block type="logic_negate" id="v0kp%!rL#vB:x|ksB(@1">
+                                          <value name="BOOL">
+                                            <block type="isAnimationPlaying" id="G5:Ga4J%Oo2|4m4k*^#G">
+                                              <value name="VALUE">
+                                                <shadow type="animationList" id=",JQ(+48.0vbj(DDy3l?Z">
+                                                  <field name="FIELDNAME">Cylinder.001</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <statement name="DO0">
+                                    <block type="controls_ifelse" id="RJ,wqFZfAY7{8+D]H+sL">
+                                      <value name="IF0">
+                                        <block type="logic_compare" id="AuI4.lZe3.-_uq{/TRK4">
+                                          <field name="OP">EQ</field>
+                                          <value name="A">
+                                            <block type="math_number" id="V4q1Cd!{d1^A4cJ$:x:R">
+                                              <field name="NUM">0</field>
+                                            </block>
+                                          </value>
+                                          <value name="B">
+                                            <block type="getAnimationFrame" id="35OH9CkM1rdRaLv.W4mf">
+                                              <value name="VALUE">
+                                                <shadow type="animationList" id="FYqkn.6Z%99`Ody%@aM]">
+                                                  <field name="FIELDNAME">Cylinder.001</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <statement name="DO0">
+                                        <block type="playAnimationAdv" id="pT7[;~J6gr~GEBGpOAPQ">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                                          <field name="REVERSED">FALSE</field>
+                                          <field name="LOOP">AUTO</field>
+                                          <value name="VALUE">
+                                            <shadow type="animationList" id="U`s[(?W+aa#vkZJI5#7i">
+                                              <field name="FIELDNAME">Cylinder.001</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                      <statement name="ELSE">
+                                        <block type="resumeAnimation" id="()Um+2moO9LIlfXqX7A8">
+                                          <value name="VALUE">
+                                            <shadow type="animationList" id="/_DIX4wthfhHLX|l{{_3">
+                                              <field name="FIELDNAME">Cylinder.001</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </statement>
+                                  <statement name="ELSE">
+                                    <block type="pauseAnimation" id="8j9`w(09sT{pxCdr[4.A">
+                                      <value name="VALUE">
+                                        <shadow type="animationList" id="DLCAAPj`/%$vYxI8PQ.K">
+                                          <field name="FIELDNAME">Cylinder.001</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="Visual" type="CommonTab" active="true" scrollx="-1642.2609098614885" scrolly="1064.8399734572934" scale="0.8775782159765171">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="G;L*Gj/aLcimO.MnG~uy">mat_on</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Ckz.Q9$;]~8d@-ix#:Lx" x="990" y="-1130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="?cA-d!6eVQhs3cWsu9d0">
+          <field name="TEXT">orange</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="LiAlyntmWkc^NH.YBoxt">
+          <value name="VALUE2">
+            <shadow type="materialList" id="-rxN(D)Rf[zqs3T+VZSc">
+              <field name="FIELDNAME">Orange</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="14W,K#9!~jZfcb_s7{Zh">
+              <field name="FIELDNAME">osnova</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="AIUn+MQw|,O.`%A|_K:=">
+              <value name="VALUE2">
+                <shadow type="materialList" id="kzQW}#0gzVa{B()ww9*o">
+                  <field name="FIELDNAME">Orange</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="h^GGBmLsVwUv$7Zk7y3p">
+                  <field name="FIELDNAME">Bashnya</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="t{UP-J2ew.GMRR?8q}:h">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="Dz)dwi~?ZV%T|o~amdyO">
+                      <field name="FIELDNAME">Orange</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="RM.vg;]4$[!zrugN0`J/">
+                      <field name="FIELDNAME">Okontovka</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="V;cG2csHmOQdo+|$6Atr">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="b:-Wl1-8IDQysqDkVzrV">
+                          <field name="FIELDNAME">Orange</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="HERrPyy@[O)3*n6_;[5U">
+                          <field name="FIELDNAME">Pl_Cyl</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="n?emhpSRqev:{(Kvp~:c">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="|d|9=f:e@7AYd2!P@ZAD">
+              <field name="TEXT">grey</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="m.bqo@+_=4aD5hwQ9Hw2">
+              <value name="VALUE2">
+                <shadow type="materialList" id="f4LNKp:UrMkBjLh?cO+:">
+                  <field name="FIELDNAME">Grey</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="QuFR2n+p!z{lE:jq|#9b">
+                  <field name="FIELDNAME">osnova</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="v}Y.0_Y*Vgo?xJLr@Jt^">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="^9brM0n6s[h@dmV^5~#E">
+                      <field name="FIELDNAME">Grey</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="j]S;W]]3UPF.eCeS$CTP">
+                      <field name="FIELDNAME">Bashnya</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="_2bxjaV[~A$?c9D,^9Ss">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="j=/1mMyp^:fi.2t[{|.N">
+                          <field name="FIELDNAME">Grey</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="!vj2#nGM@vj42tF_//K)">
+                          <field name="FIELDNAME">Okontovka</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="6pJG6y-qe|Iu5@//!rML">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="|*(iPOy4-x^fM+#-Q{V9">
+                              <field name="FIELDNAME">Grey</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="D!+pnzqf]!ER%;/X6!qV">
+                              <field name="FIELDNAME">Pl_Cyl</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="A`-/lYV]OFA/U-g:9C(9">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="bxqM0hvfo[Apy|97q@xZ">
+                  <field name="TEXT">black</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="$`lKnwI-S00f%da)L*xI">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="VhXavOYiv[wMY)CkDe=H">
+                      <field name="FIELDNAME">Black</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="!H1QzSfj@*p?*QzVItIJ">
+                      <field name="FIELDNAME">osnova</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="o(R|LDG*UdMxvT^b/z?6">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="bCx04*=(;F9PvWf*l4#g">
+                          <field name="FIELDNAME">Black</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="s9vSfJ`H}=C70ko`3{J!">
+                          <field name="FIELDNAME">Bashnya</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="tQUvC#Lr/{dL:Atc;mn1">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="lP{WU,zx*k{;$1FG`|LD">
+                              <field name="FIELDNAME">Black</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="*HLou/V(D0SN8UCg*j;~">
+                              <field name="FIELDNAME">Okontovka</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="A`U4zIbMHPByb2PphRGS">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="5kVA0Rc{~doV{--Jy=GX">
+                                  <field name="FIELDNAME">Black</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="%MZ-z=5zAg7:fFe-NN+k">
+                                  <field name="FIELDNAME">Pl_Cyl</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="{Y~`;+EerVVqgHfM$zx5">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="Up_{#fW?=Xssg8w@~;-_">
+                      <field name="TEXT">green</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="3eD(`XH;h1W$DLD.J@Ex">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="C==r)(v.uR=`W@A^~-%9">
+                          <field name="FIELDNAME">green</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="cx8Hq$+sahIqL$!bLJ^h">
+                          <field name="FIELDNAME">osnova</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="^U!b+0Z.)(~965@?S3NT">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="(-Y^xal~-e,wA-_mtRYV">
+                              <field name="FIELDNAME">green</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="%SQt@81J6foRe@A-ho3(">
+                              <field name="FIELDNAME">Bashnya</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="+`]jQ(^+Yq0b4=dU8bwi">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="M!,.u+$H:IiUp/0Km*=X">
+                                  <field name="FIELDNAME">green</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="XP#rgV8X1om7Zfh;2zyC">
+                                  <field name="FIELDNAME">Okontovka</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="]Ows1r07D+I21+pzg#_[">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="n9I@QG3+jog/+D3J)eDK">
+                                      <field name="FIELDNAME">green</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="mj*3x@(?]z,P}.d:6vh?">
+                                      <field name="FIELDNAME">Pl_Cyl</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="Ta0j;uP=aXvvg@mYL56V">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="{V%*A,^|mG%$.MjZ1lMe">
+                          <field name="TEXT">purple</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="assignMaterial" id="IjFUdC=WKS7rX;ylFM0q">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="c0xCPquh.*2mqqsH5NN*">
+                              <field name="FIELDNAME">Purple</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="cGz4(yQFIydU$Jz0y/H(">
+                              <field name="FIELDNAME">osnova</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="4o0K]qeK5:4s7^Cf:Tua">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="Q`EnC01rKg^x}|TT|/h:">
+                                  <field name="FIELDNAME">Purple</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="l#p]0QEtK{X%[Zq3B.TF">
+                                  <field name="FIELDNAME">Bashnya</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="9@+QASc,2n+_Okto1gqJ">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="oe?2go)BZb6rS5rUS=~|">
+                                      <field name="FIELDNAME">Purple</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="pO{oiJAPBy5Cr!FPi3dx">
+                                      <field name="FIELDNAME">Okontovka</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="M?;0x}839fm33`MPP,^t">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="DPR9gWRCAgyQ0Ilahodh">
+                                          <field name="FIELDNAME">Purple</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="ufq:DN|;la3.!jdATcJf">
+                                          <field name="FIELDNAME">Pl_Cyl</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="SiE4l),b%mm|[q{C.kx3" x="1530" y="-1130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="dqROPJb~wp%xlikXgq-K">
+          <field name="TEXT">yellow</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="u+t78Z]wi`DeUJ+d:_G(">
+          <value name="VALUE2">
+            <shadow type="materialList" id="Z:XGF?~0rg!m+_$%gJ_G">
+              <field name="FIELDNAME">light-yellow</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="0wW@L!aX[0^l+azZ%q`%">
+              <field name="FIELDNAME">Lopast1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="[C1z!jbKSpE{EER5YoXw">
+              <value name="VALUE2">
+                <shadow type="materialList" id="_px2FygAYQC7R/WtdW}c">
+                  <field name="FIELDNAME">light-yellow</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="H94;_v*(GBuLkziK!DSM">
+                  <field name="FIELDNAME">Lopast1.001</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="fS1(Zdm=jp|,fWEXh9.W">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="o:qj+ejo_UK:!vT,`~2{">
+                      <field name="FIELDNAME">light-yellow</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="d7n8MUI_NKb~M$W}yr6X">
+                      <field name="FIELDNAME">Lopast1.002</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="z@`UPgByxAO/mKzX6{Jl">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="of@k%H[?..4}+)b5zSwG">
+              <field name="TEXT">black2</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="v^j5Vz4In!/1%xL]-p[Z">
+              <value name="VALUE2">
+                <shadow type="materialList" id="6O+.wrYR:^.4XoUE+Qk:">
+                  <field name="FIELDNAME">Black</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="IV#Up=s(h(Cw)P@eV@(s">
+                  <field name="FIELDNAME">Lopast1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="_XLbfdV4;RjthnW(7?F+">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="G)8{?v0@9/So=0{2rXN]">
+                      <field name="FIELDNAME">Black</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="/Ib]q~/ejJ**Pu?c=1=D">
+                      <field name="FIELDNAME">Lopast1.001</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="nZ;.Eg_p?.=.[`0/a7d`">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="4DN2U~#1F4FzgJA5(]Rp">
+                          <field name="FIELDNAME">Black</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="+|3{Yr6]3^ZRIQS4hnSE">
+                          <field name="FIELDNAME">Lopast1.002</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="R-?wq.:7Ma!Nvtx-=vj/">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="[o)O,Rd78B-dm.nwzIt_">
+                  <field name="TEXT">steel</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="4+vW}CHl/}ciXj0ze+hv">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="CQ(Fz53{3W4CrcgrA8ur">
+                      <field name="FIELDNAME">Steel</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="c~kfc,lV9U4]d))Vn2~k">
+                      <field name="FIELDNAME">Lopast1</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="7!7+)l-BQl2LNqe}jFpw">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="1UP_ycOa)#=i1Fg#?*ds">
+                          <field name="FIELDNAME">Steel</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id=",6.-Us4o!MfOMcu0hLjD">
+                          <field name="FIELDNAME">Lopast1.001</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="`W#bCl5lekCJaqSz2Y^`">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="aizu^vhIoMdc#0GT(k!c">
+                              <field name="FIELDNAME">Steel</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="-,ZN]EF$6p{q`C+U^9n*">
+                              <field name="FIELDNAME">Lopast1.002</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="J7mk_,,XPn]ZMD$AwN,M">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="`4Hk`+g$lY%%Bio2#-cS">
+                      <field name="TEXT">steel2</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="A[v}CtNn1I7rBv3|hn5^">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="g1~zfXBqn**-.!^gi@FA">
+                          <field name="FIELDNAME">steel_top</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="sl!nhV*s=VngwTL2OhUJ">
+                          <field name="FIELDNAME">Lopast1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="~atT8MG?{(mBz,;bOleO">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="#3}6/UfepTQec(p6T1dA">
+                              <field name="FIELDNAME">steel_top</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="m#=3+YFpAo:jo%J@4QPS">
+                              <field name="FIELDNAME">Lopast1.001</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="GYtExC^]wr6zAK5FdA=C">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="lCo}ROhPu3~VN~4oP4=/">
+                                  <field name="FIELDNAME">steel_top</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="n*~2pMlQb5Z2;7@$tLC.">
+                                  <field name="FIELDNAME">Lopast1.002</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="mD^JyHJ-|eQvX5z?_%5L">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="E7wJhfB!SR:!R,,tK=~3">
+                          <field name="TEXT">orange2</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="assignMaterial" id="g|t[-tk_3J}4YFro{o~?">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="g[F|K14;DAM6fM,iYQ;8">
+                              <field name="FIELDNAME">Orange</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="mE_{GAl-~+x3Z5?OBVOD">
+                              <field name="FIELDNAME">Lopast1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="M0Z|ZT2kv6JlLQxwC$Vw">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="P1RmI/NfW^7w?ML+qwXW">
+                                  <field name="FIELDNAME">Orange</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="mZ:9;J2Pl`il%wH!z0G*">
+                                  <field name="FIELDNAME">Lopast1.001</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="ykNRjHL*?Nx~sWB)7?Uv">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="kDp}1xT$+_|aYo2v1?:7">
+                                      <field name="FIELDNAME">Orange</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="@Hg}PN+laCRtI5n5Ug_1">
+                                      <field name="FIELDNAME">Lopast1.002</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="KgYF[-m0z}0,.S*]*mRt" x="2110" y="-1130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="+R;+l_FZFh?H{a(imb1w">
+          <field name="TEXT">steel2.1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="5YblN#:4Ate^{e5$a/Eu">
+          <value name="VALUE2">
+            <shadow type="materialList" id="k~;Dm)z,t/ABT}OC]LJ`">
+              <field name="FIELDNAME">Steel</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="7xKtG6Cwzj:BlX7T#!Wk">
+              <field name="FIELDNAME">Reshetka</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="yCJ0{j9i%ARqF^3{wTRD">
+              <value name="VALUE2">
+                <shadow type="materialList" id="vvtc)3(u^DUsJtey=W_w">
+                  <field name="FIELDNAME">Steel</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="[mpF3/wf1:}+Y|!2*2U#">
+                  <field name="FIELDNAME">Face_Cyl</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="gi#5iQ9=H.N!}M/=1Z1!">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="yH@#OSj~_q2-d$f5IH8T">
+                      <field name="FIELDNAME">Steel</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id=".|C#SgyaxBpKJ#pt@RHN">
+                      <field name="FIELDNAME">Steel_Cyl</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="*k-AA8N.bWK#FAc)KDjG">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="#q^2y(T#$nZWgUR-n%tU">
+                          <field name="FIELDNAME">Steel</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="YEiYT+Rzq4]SCy{6(]%C">
+                          <field name="FIELDNAME">Cube</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="cPfd*k7^wQmG8zo|zr$Y">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="467d{F8A39%Y6w]vg[7]">
+              <field name="TEXT">steel2.2</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="Ip5ay~TcBm@?2u:b,2=}">
+              <value name="VALUE2">
+                <shadow type="materialList" id="$O[@VPP5xIwH^IYvst}F">
+                  <field name="FIELDNAME">steel_top</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="5CCyt~#gyamjMIFw`Z5,">
+                  <field name="FIELDNAME">Reshetka</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="7i1=KMUyRA:}ZR=$)y}Q">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="F5kkNbmE]fOid,YTw`9@">
+                      <field name="FIELDNAME">steel_top</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="8J_}lQBW9--uR6BVaflQ">
+                      <field name="FIELDNAME">Face_Cyl</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="gbe2uvSd~DMLqL|Is{`W">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="7994j3qN@N}HSYor1a_@">
+                          <field name="FIELDNAME">steel_top</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="iB4{%=.^U{;R=Ke_pG~l">
+                          <field name="FIELDNAME">Steel_Cyl</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="1k:c)ai~;$u*YYQoguqg">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="^,]8zvz3Ika?~Tim}L*w">
+                              <field name="FIELDNAME">steel_top</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="geGn_Ag|P2W`r,GVYmV9">
+                              <field name="FIELDNAME">Cube</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="`;C4$4LL/!m1l[hvZS63">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="qcho9l~HHSYSk4PGYg~M">
+                  <field name="TEXT">orange_me</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="J4*2O:WfC0R}[ODsz5E1">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="v*=Y_3ngv@hNlqL4L-v@">
+                      <field name="FIELDNAME">Orange_Metal</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="W.1c[vzk]*n[1Zqw:Sfz">
+                      <field name="FIELDNAME">Reshetka</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="{8ob)+qw9^|!EEO%9*?T">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="~7!J!@sJ9rJQ4G#Q_#qq">
+                          <field name="FIELDNAME">Orange_Metal</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="tPOL:u7*{DZx#0-eEHdJ">
+                          <field name="FIELDNAME">Face_Cyl</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="ut%I_s@eS{zG{TjfXDQg">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id=":Paj5s|KMdO!v}b-(B*8">
+                              <field name="FIELDNAME">Orange_Metal</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="Fe2/CMR.MJqU6yYpvClF">
+                              <field name="FIELDNAME">Steel_Cyl</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="Afb~bbS/A3G)nZ89VN}`">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="=*N.3=eC2FE0AqKpZD/#">
+                                  <field name="FIELDNAME">Orange_Metal</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="O!U5=1n+uE~d;B,YV4,w">
+                                  <field name="FIELDNAME">Cube</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="z%pk2/f;~nVVrKo!g9SC" x="2690" y="-1130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="(M+CCgYRh$v8b|NQhZI2">
+          <field name="TEXT">orange3</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="B-!{B#WZ[]7V%FPTg}vA">
+          <value name="VALUE2">
+            <shadow type="materialList" id=")1up[c4G]{Ns.shBosOG">
+              <field name="FIELDNAME">Orange</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="bw8ASQ/{w%hhb`dt)^P2">
+              <field name="FIELDNAME">Kn0</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="}8i^f)[%fI/(73YV{}rf">
+              <value name="VALUE2">
+                <shadow type="materialList" id="M:w0Lbt[C@K5zj+v!:Ds">
+                  <field name="FIELDNAME">Orange</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="0NIQJGc$!Nu7_]E+a|_Q">
+                  <field name="FIELDNAME">Kn1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="nl-0!MFqMq#:H6^2_,EQ">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="Ll794zAn+9JK19eM`9H6">
+                      <field name="FIELDNAME">Orange</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="C1Z%Tw);[K4|qC6bFG^`">
+                      <field name="FIELDNAME">Kn2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="!gGLRVX!,TjrxiwiJl%)">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="XyYfqwq$t,N$Lre2%5,(">
+                          <field name="FIELDNAME">Orange</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="PJOeXdz[b.cZ:u#-oW=I">
+                          <field name="FIELDNAME">KnPov</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="7@oG2yv+D*c7v$Kgp(Ku">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="b2C[hZm#45_C/W+ySwDH">
+              <field name="TEXT">yellow2</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="779|TcCjN$i8JQ;:dc.|">
+              <value name="VALUE2">
+                <shadow type="materialList" id="6b2=tt7OcrF)*0|@D(K8">
+                  <field name="FIELDNAME">light-yellow</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id=")CPLI;oDO-WB~|a;j(Ji">
+                  <field name="FIELDNAME">Kn0</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="4[JbN4,:qHaChs{VVMGE">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id=")QwBJTcm:SygBOA_ZD1w">
+                      <field name="FIELDNAME">light-yellow</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="i$EZjdcZ+n;XdE;Wo}r%">
+                      <field name="FIELDNAME">Kn1</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="GC*y!(.J%|W`DYTy`IyC">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="krT(P3*C.oO77AW:h?[f">
+                          <field name="FIELDNAME">light-yellow</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="=eF)_i5`LgI6C2;G0[::">
+                          <field name="FIELDNAME">Kn2</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="-FR)xG=HZK=:cf6p3:^s">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="mPe(Zxsb6%iB1l%dg%{g">
+                              <field name="FIELDNAME">light-yellow</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="8eqyBi_tNk1PPHI5cb7v">
+                              <field name="FIELDNAME">KnPov</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="Dh%S9,k=b+lr[OF(e|)v">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="Avji+usP22I,c*@}nmAx">
+                  <field name="TEXT">white</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="olevC)=I8{{Ka+?L4nRG">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="2hCi2.T(p%0_T?v.tjUY">
+                      <field name="FIELDNAME">White</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="$EEhUzavpATbxsralNeg">
+                      <field name="FIELDNAME">Kn0</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="~+S6p[y^eHI6h0S;%%uv">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="|*g%;,9r=YFCb|pK3D8D">
+                          <field name="FIELDNAME">White</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="itJ^+{Ru5/cs:Fq$kuk-">
+                          <field name="FIELDNAME">Kn1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="u+aElyLXv!0gkZg6Pt:5">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="D]89(;WP!RZdL)J{ME1C">
+                              <field name="FIELDNAME">White</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="z2I$%RPr%9!I07.m=~49">
+                              <field name="FIELDNAME">Kn2</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="g6u=tkI=dRKdR#nZMLaQ">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="0P7Ufd;KWhGHCNSM{Y+t">
+                                  <field name="FIELDNAME">White</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="-ufJH3NtE61NSP@*,[oS">
+                                  <field name="FIELDNAME">KnPov</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="=`z.{`MpX)};4FLqRPA~">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="ahhN?A9w(0x7f;T^Tk6_">
+                      <field name="TEXT">purple2</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="c)Cd#$#]eR4}e1ctPe9+">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="5kU?sDC_ZZ15JI6Y5(;_">
+                          <field name="FIELDNAME">Purple</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="`{-$gXLyv#yWm#Fo^ndb">
+                          <field name="FIELDNAME">Kn0</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="(ILZLu8Hioj(Ksx/rV`4">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="UZKwQ9~cBL3^][f]n|Z_">
+                              <field name="FIELDNAME">Purple</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="#bR,M,vj=mT.::tI.r9/">
+                              <field name="FIELDNAME">Kn1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="$95dsep:cRLS(Z_+H$5Z">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="J(~-MT1Q8WGHE94wkHlL">
+                                  <field name="FIELDNAME">Purple</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="}a2zFqLQ3e9w6`5}~o4R">
+                                  <field name="FIELDNAME">Kn2</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="$!Y0|:9y6J2Flu].!T)u">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="B|Ro*|{y:op)UTA$0yE6">
+                                      <field name="FIELDNAME">Purple</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="NxU}~D.!=HLb_-LwP;gn">
+                                      <field name="FIELDNAME">KnPov</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="O%G6)E#jkc};Lto(F2Y2" inline="false" x="170" y="-50">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="=gTYh^af6G=/|nyAn}kr">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="allObjectList" id="-ce}R#RnKC[Awy~2|f}K"></block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="FR7mXq`Y%fM5s3c:UXby">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="xwwtLPvn#jk!o%7.pbpM">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="hoveredObject" id=":UPzQ75NxAaC62v:jI2U"></block>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="x9!j8ePXg!?kk}T~Bo1/">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="xwwtLPvn#jk!o%7.pbpM">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="hoveredObject" id="B7VZ*/{P%;!M(AlOcQi5"></block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="P`MIaHpKS%_?B^cJ,4t|" x="1050" y="50">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="4{DeFcjN1Z,}s[*GaRJ9">
+          <field name="TEXT">osnova</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="B}Ob@WXMhrr}md]`df6W">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <field name="MOVEMENT_TYPE">LINEAR</field>
+          <value name="POSITION">
+            <block type="objectList" id="qge!$s=:r3Ole/v_]R?d">
+              <field name="FIELDNAME">Spot</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="sheJ[g]}Jo,}Q5oX0uPD">
+              <field name="FIELDNAME">osnova</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="f]szyqt[LLD.@yr1GQ3~">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="EWi2Id,cZ[O~K8546vQa">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="D!(va~u)+G/]vqEIP48#">
+                  <field name="TEXT">block</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="u$%UxvEDUMG+zL4Lmr~|">
+                  <field name="TEXT">vibor1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="JM2{oEu;n#}Dac+({/:t">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="V+p,H26XQ#FY9:!Wu5D*">
+                      <field name="TEXT">none</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="(1_!l/C#8d/_)gTGvvzN">
+                      <field name="TEXT">vibor2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="ilzcgT6LMv?/n#`_/DP`">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="ru*d7)y;eIQC2=fjXo`m">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id=":J,xkv$BszLH+Wac^xre">
+                          <field name="TEXT">vibor3</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="dAnyj)zm6ZPnc_b%/%m0">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="eE)miqEsg,6DPQ4`*0xW">
+                              <field name="TEXT">none</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="6Ni~v^2J%)~}l[DDRG3t">
+                              <field name="TEXT">vibor4</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="B:~8_w{xe7qK~JkP[E^F">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="VT.^v(qi=SAf2-h79#01">
+              <field name="TEXT">lopasti</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="tweenCameraExt" id=",y*tF4DTi_TR$;$52}6L">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <field name="MOVEMENT_TYPE">LINEAR</field>
+              <value name="POSITION">
+                <block type="objectList" id="%x3pe2Ous!ZW@g1e[{cA">
+                  <field name="FIELDNAME">Spot</field>
+                </block>
+              </value>
+              <value name="LOOKAT">
+                <block type="objectList" id="NNowK6bV~-M.$KyKq$c+">
+                  <field name="FIELDNAME">Face_Cyl</field>
+                </block>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="X!8PW,DorWvH*@!EUb|@">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="JAt3BxALKf65i*Aebqa:">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="q/ORpy[wljQ:i$(u(;R7">
+                      <field name="TEXT">block</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="]Yv4HjV5hv$7.5KH6%Va">
+                      <field name="TEXT">vibor2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="-6NV(|YW?u7r4A+1io^_">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="I2Qr:t;^%99//gW`D}-U">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="SiOLKH~2NJ*54j$rw2Q1">
+                          <field name="TEXT">vibor1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="TCDnkB*6(4CqKZPb|syN">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="WPmE_z3[BB5R^mVu:]-5">
+                              <field name="TEXT">none</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="{uH|z;lkp#9Dmj=B(G$.">
+                              <field name="TEXT">vibor3</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemStyle" id="Ihi2fr!7*mQ5=ov9W{xy">
+                              <field name="PROPERTY">display</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="Iu-FR.A#0X}VcGDy/oKQ">
+                                  <field name="TEXT">none</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="n0/uzslIh``QBTDnrs}m">
+                                  <field name="TEXT">vibor4</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="M.NOX@h:5!i-+O{^eFJi">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="Bymt)9$~4=d.32nlHjB1">
+                  <field name="TEXT">stal</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="Ea7R5{`R6#@hTZg,Q~#u">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">LINEAR</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="0JHXXrUsV`u+G6A1c_e6">
+                      <field name="FIELDNAME">Spot</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="?YVo6C]LsNs4VEZVunvE">
+                      <field name="FIELDNAME">Face_Cyl</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="7ZUilw,OT,o8rX5zXm)$">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="*HGuC4^.FP2[CUK(oEDF">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="jVCzk=YJy%~{o,/K8Wwa">
+                          <field name="TEXT">block</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="Zn7@IplPV5AtTI8#H}t?">
+                          <field name="TEXT">vibor3</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="n*|ZBf}~WfwG|Y}^Hx:/">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="@SasR8D[Q?w:R`VwtlFc">
+                              <field name="TEXT">none</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="O+z,}n!=q2%j)wN}Pz9:">
+                              <field name="TEXT">vibor1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemStyle" id="NM/klrm09Vr,J6-x(0~u">
+                              <field name="PROPERTY">display</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="qw+J]](1jE[jK!^(b_Z4">
+                                  <field name="TEXT">none</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="(5)./vrmX[0Wj[hmX],n">
+                                  <field name="TEXT">vibor2</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="}tjm1Md|p-6iRLt$~B+X">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="}I*BX.xcXcLN[:7Rw7d8">
+                                      <field name="TEXT">none</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="${gok}Q?b%|V.wbDR0*?">
+                                      <field name="TEXT">vibor4</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="[SC_w3ngvxg:vVh.|!%u">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="|oc^)7zHOq_B%p0y_-0%">
+                      <field name="TEXT">knopki</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="tweenCameraExt" id="i+U;Pm(+6E#w.UU)_1ee">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                      <field name="MOVEMENT_TYPE">LINEAR</field>
+                      <value name="POSITION">
+                        <block type="objectList" id="sdzH_.Y?pR3k{%z1p6_U">
+                          <field name="FIELDNAME">cam1</field>
+                        </block>
+                      </value>
+                      <value name="LOOKAT">
+                        <block type="objectList" id="@!@@aHFAsRZzq;z?`1/t">
+                          <field name="FIELDNAME">Cube</field>
+                        </block>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="U7rTZNQ[FRlMr[V,pc)/">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="LYfZ`nDb!dp]]iiJU*Jg">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="dDX(.|PnSr@qxnQt^h5@">
+                              <field name="TEXT">block</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="?ZQkeV7QoevEPqLDa,}H">
+                              <field name="TEXT">vibor4</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemStyle" id="ZyN/)bmf{ogrko$1B{ru">
+                              <field name="PROPERTY">display</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="wI)6L1oAXL!U#(}u1ml+">
+                                  <field name="TEXT">none</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="oM1%icL2p_L(~:VE.!Z.">
+                                  <field name="TEXT">vibor1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="wAnRav$W~t/fQIYV8VTI">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="q49;x/{vi5O:zb]0.$QV">
+                                      <field name="TEXT">none</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="{7=XQ{/^Cry.k:]vaI%+">
+                                      <field name="TEXT">vibor2</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setHTMLElemStyle" id="`jZiI(nP4SOAk6vd+,j/">
+                                      <field name="PROPERTY">display</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="UlP|39|,u:4SKjV,3T*4">
+                                          <field name="TEXT">none</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text" id="B/Lx#w/23_d_@fmsmXnV">
+                                          <field name="TEXT">vibor3</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="XIUZ0=a807bo/lC{:3_r" x="151" y="170">
+      <field name="VAR" id="G;L*Gj/aLcimO.MnG~uy">mat_on</field>
+      <value name="VALUE">
+        <block type="math_number" id="zxTi[{|~q+svj#-Kwv=L">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <next>
+        <block type="eventHTMLElem" id="2C`njgb=|ASbc?F@dm*k">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="ao.pw9vc,Y2y~7c3[OHQ">
+              <field name="TEXT">play</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="resumeAnimation" id="])xYxo1a}G$)=0wDc`}(">
+              <value name="VALUE">
+                <shadow type="animationList" id="g#jgY_g]yOZe~O/fX*NP">
+                  <field name="FIELDNAME">Steel_Cyl</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="resumeAnimation" id="`Ifh1ar46EP%^4LlkRu#">
+                  <value name="VALUE">
+                    <shadow type="animationList" id="LJ@%v!?|11tfGpBgCDoA">
+                      <field name="FIELDNAME">Cylinder.001</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="CueQ@6td-5[a(NGtL-.X">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="{HL)H/Z8,s}P!273N9t~">
+                  <field name="TEXT">pause</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="pauseAnimation" id="8j9`w(09sT{pxCdr[4.A">
+                  <value name="VALUE">
+                    <shadow type="animationList" id="DLCAAPj`/%$vYxI8PQ.K">
+                      <field name="FIELDNAME">Cylinder.001</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="pauseAnimation" id="7zVv$MAJI9~(SdM)7,d+">
+                      <value name="VALUE">
+                        <shadow type="animationList" id="$[CakVhW;52a*GVRaq;)">
+                          <field name="FIELDNAME">Steel_Cyl</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="JZIl0#hi!Akl?P]]i$%#">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="/Krdg**#@1di/Ro?y]G$">
+                      <field name="TEXT">stop</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="stopAnimation" id="=sxy6@]1C39vxr8i`.1,">
+                      <value name="VALUE">
+                        <shadow type="animationList" id=";e?:[rzj_z)@4JSKTq6n">
+                          <field name="FIELDNAME">Cylinder.001</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="stopAnimation" id="w-mRG(DqV$Lnc;0$SJ]E">
+                          <value name="VALUE">
+                            <shadow type="animationList" id="J^d/Zo})h=M3zR~j);xH">
+                              <field name="FIELDNAME">Steel_Cyl</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="stopAnimation" id="T;r{a5}DL/wXI:^fAPAf">
+                              <value name="VALUE">
+                                <shadow type="animationList" id=":8o8tFLmx[@]M8o:ga/v">
+                                  <field name="FIELDNAME">Kn0</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setObjTransform" id=",Nn[|p:mrX=fO++mI{o/">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                  <field name="MODE">position</field>
+                                  <field name="OFFSET">FALSE</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="W750[hktCSA=!yqV`lXa">
+                                      <field name="FIELDNAME">Kn1</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="Z">
+                                    <block type="math_number" id="R=c58D:h$MxpX!wEq|wV">
+                                      <field name="NUM">0.096733</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="setObjTransform" id="LokCl*xy^BS[vZQx*vko">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                      <field name="MODE">position</field>
+                                      <field name="OFFSET">FALSE</field>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList" id=".mn27[Nf(GxFH=;7r4O8">
+                                          <field name="FIELDNAME">Kn2</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="Z">
+                                        <block type="math_number" id="RIg]$~Q`}~r9kwt87-oD">
+                                          <field name="NUM">0.096733</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="setObjTransform" id="]WTwxzKojBF9ySeL1RP3">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                          <field name="MODE">position</field>
+                                          <field name="OFFSET">FALSE</field>
+                                          <value name="TARGETOBJ">
+                                            <shadow type="objectList" id=";^V.LivI-TDuw)34-*%k">
+                                              <field name="FIELDNAME">KnPov</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="Z">
+                                            <block type="math_number" id="J36vHlboNPuq^vsAiZ+N">
+                                              <field name="NUM">0.096733</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="XXqfEPc7e%n-Q4vG{s[x">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="+bVvboGaMl|nUDm0Gp0;">
+                          <field name="TEXT">mat</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="controls_if" id="CQ,1b(B-X=-1|#bL[tH9">
+                          <mutation else="1"></mutation>
+                          <value name="IF0">
+                            <block type="variables_get" id="tplU-`[x7urY?#=-y[vB">
+                              <field name="VAR" id="G;L*Gj/aLcimO.MnG~uy">mat_on</field>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="variables_set" id="Q|n${QLR95NU,k1O`C6a">
+                              <field name="VAR" id="G;L*Gj/aLcimO.MnG~uy">mat_on</field>
+                              <value name="VALUE">
+                                <block type="math_number" id="#MCJ*,v0ly%)*cMws!!6">
+                                  <field name="NUM">0</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="w;}fLut(O$Lh`m#XZHn]">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id=",H;U1.%*i,qrBQ^X8D5L">
+                                      <field name="TEXT">none</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="S]9;hd}S}/ZqiJXTvw7n">
+                                      <field name="TEXT">menu</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                          <statement name="ELSE">
+                            <block type="variables_set" id="WCAvN=3uJ5rTbJxZq:e+">
+                              <field name="VAR" id="G;L*Gj/aLcimO.MnG~uy">mat_on</field>
+                              <value name="VALUE">
+                                <block type="math_number" id="AQF{d#J%OjRN%hNCJ^m6">
+                                  <field name="NUM">1</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="g(xzXrH5XARSdPw2[+u*">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="8d3XD7W2MVR;YYD}=hkb">
+                                      <field name="TEXT">block</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="H.6|UBs`{^1NzW*}EUO$">
+                                      <field name="TEXT">menu</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1411.1999999999998" viewport-y="37" viewport-w="442.797" viewport-h="438" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
